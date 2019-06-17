@@ -205,7 +205,7 @@ export namespace TezosMessageUtils {
      * Encodes the branch hash to hex.
      * 
      * @param {string} branch Branch hash.
-     * @returns {string} Hex represntaton of the Base58-check branch hash.
+     * @returns {string} Hex representation of the Base58-check branch hash.
      */
     export function writeBranch(branch: string): string {
         return base58check.decode(branch).toString("hex").slice(4);
